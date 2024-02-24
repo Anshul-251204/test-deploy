@@ -16,8 +16,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
 let arr = ["a"]
-app.get("/", (req, res) => res.send(arr));
-app.post("/" ,(req,res)=>{
+app.get("/api/g", (req, res) => res.send(arr));
+app.post("/api/p" ,(req,res)=>{
     const { input } = req.body;
     
     arr.push(input)
